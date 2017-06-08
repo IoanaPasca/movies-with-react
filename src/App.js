@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import MoviesList from './MoviesList';
 import Search from './Search';
+import './App.css';
+
+ 
 
 
 class App extends Component {
@@ -15,8 +18,7 @@ class App extends Component {
 		};
 
 	}
-
-	movies = [{
+movies = [{
 		name : "World War Z",
 		year :"2013"
 	},
@@ -49,7 +51,6 @@ class App extends Component {
 		name:"Up",
 		year:"2009"
 	}];
-
 	search(input) {
 		let filteredMovies = this.movies.filter((movie) => {
 			return (movie.name.toLowerCase().includes(input.toLowerCase()) || movie.year.includes(input));
@@ -62,7 +63,7 @@ class App extends Component {
 
         return (
             <div>
-                <p> List of movies </p>
+                <h1 className="title"> List of movies </h1>
                 <Search search={this.search} />
                 <MoviesList movies={this.state.filteredMovies} />
             

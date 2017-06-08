@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
+import './Movie.css';
 
 class Movie extends Component {
 
     render() {
         return (
-           <ul>
-           		<li> {this.props.movie.name} {this.props.movie.year} </li>
-           </ul>
+        	<div className="panel panel-default">
+			  <div className="panel-heading">{this.props.movie.name}</div>
+			  <div className="panel-body">
+			    Year: {this.props.movie.year}
+			  </div>
+			</div>
         );
     }
 }

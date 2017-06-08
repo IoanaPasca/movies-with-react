@@ -1,3 +1,20 @@
-p{
-	color:red;
+.title {
+	font-size: 36px;
+	text-align: center;
+	color:green;
+	bottom: 50px;
+	margin-top:30px;
+	margin-bottom: 50px;
+	font-size: 50px;
+	font-family: Verdana,italic;
+
+}
+
+.panel-default
+{
+	margin-left: 150px;
+	margin-right: 150px;
+	width: 300px;
+    height: 50px;
+    display: inline-table;
 }
